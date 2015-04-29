@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>正比例</title>
+  <meta name="description" content="正比例关系图">
+  <meta name="keywords" content="bootstrap, jekyll, jsxgraph, mathjax">
+  <meta name="author" content="geomfun <geomfun@hotmail.com>">
+
+  
+  <link rel="canonical" href="/shapes/direct-proportion/">
+  <link rel="icon" href="/img/favicon.ico">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="数学实验">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon-152x152.png">
+
+  <link rel="stylesheet" href ="/css/bootstrap.min.css">
+  <link rel="stylesheet" href ="/css/bootsnipp.min.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  
+</head>
+
+<body>
+<a id="skippy" class="sr-only sr-only-focusable" href="#content">
+  <div class="container"><span class="skiplink-text">直接进入主内容区</span></div>
+</a>
+<nav class="navbar navbar-fixed-top navbar-bootsnipp animate" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="animbrand">
+        <a class="navbar-brand animate" href="/index.html">数学实验</a>
+      </div>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a class="animate" href="/shapes/direct-proportion/index.html">正比例</a></li>
+        <li><a class="animate" href="/examples.html">样例</a></li>
+        <li><a class="animate" href="/new.html">新建</a></li>
+        <li><a class="animate" href="/blog.html">博客</a></li>
+        <li><a class="animate" href="/about.html">关于</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<link rel="stylesheet" href ="/css/jsxgraph.css">
+<div class="container-fluid" id="content">
+  <div class="jxgview center-block" id="jxgbox"></div>
+</div>
+
+
+
+
+<footer class="bs-footer" role="contentinfo">
+  <div class="container">
+    <p>本项目受 GPL 开源协议保护，基于 JSXGraph、Bootstrap 和 Jekyll 构建。</p>
+    
+
+  </div>
+</footer>
+<script src="/js/jquery-1.11.0.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootsnipp.min.js"></script>
+
+
+
+
+
+
+
+
+<script src="/js/jsxgraphcore.js"></script>
+<script src="/js/jsxgui.js"></script>
+<script>
+$('#jxgbox').height(600);
+
+
+
+var board = JXG.JSXGraph.initBoard('jxgbox', {
+  originX: 100,
+  originY: 500,
+  unitX: 50,
+  unitY: 10,
+  axis: true,grid: true,
+  
+  keepAspectRatio: true, showCopyright: false
+});
+window.board = board;
+
+</script>
+<script src="graph.js"></script>
+</body>
+</html>
